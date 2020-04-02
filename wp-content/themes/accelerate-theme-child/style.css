@@ -44,10 +44,6 @@ Text Domain:  accelerate-theme-child
     font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
-.individual-featured-work {
-    margin-bottom: 2em;
-}
-
 .individual-featured-work a {
 	display: block;
 }
@@ -88,4 +84,9 @@ aside.case-study-sidebar {
 div.case-study-images {
 	float:left;
 	width: 606px;
+}
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
 }
