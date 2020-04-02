@@ -29,6 +29,14 @@ Text Domain:  accelerate-theme-child
     margin: 6em auto;
 }
 
+.homepage-featured-work {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
 .featured-work h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	text-align: center;
