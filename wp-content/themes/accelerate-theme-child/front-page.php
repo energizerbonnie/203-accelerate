@@ -25,7 +25,7 @@ get_header(); ?>
 
 	<!-- FEATURED WORK -->
 	<section class="featured-work">
-		<div class="site-content clearfix">
+		<div class="site-content">
 			<h4>Featured Work</h4>
 			<ul class="homepage-featured-work">
 			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
