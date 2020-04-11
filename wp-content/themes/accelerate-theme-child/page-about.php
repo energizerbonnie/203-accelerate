@@ -22,26 +22,30 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
-	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
-	<?php while ( have_posts() ) : the_post();
-			$image_1 = get_field("image_1");
-			$size = "full";
-			$services = get_field('services');
-			$description = get_field('description') ?>
-
-		<article class="our-services clearfix">
-				<h2><?php the_title(); ?></h2>
-				<?php the_excerpt(); ?>
-			<div class="services-list">
-				<h4><?php echo $services; ?></h4>
-				<p><?php echo $description; ?></p>
-				<?php if($image_1) {
-					echo wp_get_attachment_image( $image_1, $size );
-				} ?>
-			</div>
-		</article>
-	<?php endwhile; // end of the loop. ?>
+	<!-- OUR SERVICES -->
+	<section class="our-services">
+		<div class="site-content">
+			<h4><?php the_title(); ?></h4>
+			<p><?php the_excerpt(); ?></p>
+			<ul class="services-list">
+			<?php query_posts('name=about'); ?>
+		<!-- the loop -->
+				<?php while ( have_posts() ) : the_post();
+					$image_1 = get_field("image_1");
+					$size = "full";
+				?>
+				<li class="individual-service">
+					<figure>
+						<?php echo wp_get_attachment_image($image_1, $size); ?>
+					</figure>
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_excerpt(); ?></p>
+				</li>
+				<?php endwhile; // end of the loop. ?>
+				<?php wp_reset_query(); // resets the altered query back to the original ?>
+			</ul>
+		</div>
+	</section>
 
 		</div><!-- .main-content -->
 	</div><!-- #primary -->

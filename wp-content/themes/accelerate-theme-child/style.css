@@ -83,6 +83,8 @@ li.social-icon {
 	text-transform: uppercase;
 }
 
+/* Widget Area on Homepage */
+
 /*Case Studies*/
 .case-study {
     clear: both;
@@ -149,38 +151,32 @@ div.case-study-images img {
 /* 404 Page */
 
 .error404 {
-  /* The image used */
   background-image: url("img/404photo.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#error h1,
+.error-msg h1,
 p {
-    font-family: 'Londrina Shadow', cursive;
+    font-family: 'Londrina Shadow', 'Montserrat', 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     line-height: 1.65em;
-}
-
-#error p {
-    font-size: 28px;
     text-shadow: 2px 2px #000000;
 }
 
+.error-msg p {
+    font-size: 28px;
+    color: white;
+}
+
 .error-msg {
-    background: rgba(0,0,0,.65);
+    background: rgba(0,0,0,.50);
     text-align: center;
     text-transform: uppercase;
-    position: absolute;
-    padding: 18px;
-    margin-top: 125px;
-    right: 2.5em;
+    padding: 2.5em;
+    margin: 125px 285px 0 285px;
     border: 1px solid #7e7e7e;
 }
 

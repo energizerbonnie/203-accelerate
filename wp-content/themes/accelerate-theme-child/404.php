@@ -20,3 +20,5 @@ get_header(); ?>
 			<p>The page you're looking for does not exist.<br> But since you're already here, it's not such a waste,<br> is it?</p>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
+
+<?php get_footer(); ?>
