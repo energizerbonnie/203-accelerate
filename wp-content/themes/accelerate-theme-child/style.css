@@ -158,7 +158,7 @@ div.case-study-images img {
   background-size: cover;
 }
 
-.error-msg h1,
+#error h1,
 p {
     font-family: 'Londrina Shadow', 'Montserrat', 'Open Sans', Arial, sans-serif;
     font-weight: 600;
@@ -166,7 +166,7 @@ p {
     text-shadow: 2px 2px #000000;
 }
 
-.error-msg p {
+#error p {
     font-size: 28px;
     color: white;
 }
