@@ -20,6 +20,14 @@
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
+/* About Page */
+
+#about .hero-content {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+/* End of About Page */
+
 /* Social Media Nav */
 
 .social-media-menu {
@@ -101,6 +109,82 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 }
 /*END Case Studies*/
+
+/* Contact Form Page */
+
+.main-content {
+	max-width: 700px;
+	margin: auto;
+}
+
+.main-content h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+.main-content p {
+    margin: 0 0 45px 0;
+}
+
+.nf-field label {
+    font-weight: 400;
+    font-size: .875em;
+}
+
+.one-half {
+	display: inline-block; 
+}
+
+#nf-field-2 {
+    float: right;
+    background-color: #45ac9d;
+}
+
+.ninja-forms-req-symbol,
+.nf-form-fields-required {
+    display: none;
+}
+
+/* 404 Page */
+
+.error404 {
+  /* The image used */
+  background-image: url("img/404photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#error h1,
+p {
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: 600;
+    line-height: 1.65em;
+}
+
+#error p {
+    font-size: 28px;
+    text-shadow: 2px 2px #000000;
+}
+
+.error-msg {
+    background: rgba(0,0,0,.65);
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 18px;
+    margin-top: 125px;
+    right: 2.5em;
+    border: 1px solid #7e7e7e;
+}
+
+/* End of 404 Page */
 
 /* Media Queries */
 @media (min-width: 768px) {
