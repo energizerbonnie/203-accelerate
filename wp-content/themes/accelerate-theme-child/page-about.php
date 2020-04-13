@@ -25,21 +25,20 @@ get_header(); ?>
 	<!-- OUR SERVICES -->
 	<section class="our-services">
 		<div class="site-content">
-			<h4><?php the_title(); ?></h4>
-			<p><?php the_excerpt(); ?></p>
-			<ul class="services-list">
-			<?php query_posts('name=about'); ?>
+			<h4>Our Services</h4>
+			<ul class="about-services">
+			<?php query_posts('post_type=about_services'); ?>
 		<!-- the loop -->
 				<?php while ( have_posts() ) : the_post();
-					$image_1 = get_field("image_1");
+					$image = get_field("image");
 					$size = "full";
 				?>
-				<li class="individual-service">
+				<li class="individual-services">
 					<figure>
-						<?php echo wp_get_attachment_image($image_1, $size); ?>
+						<?php echo wp_get_attachment_image($image, $size); ?>
 					</figure>
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_excerpt(); ?></p>
+					<h3><?php the_title(); ?></h3>
+					<p><?php the_content(); ?></p>
 				</li>
 				<?php endwhile; // end of the loop. ?>
 				<?php wp_reset_query(); // resets the altered query back to the original ?>
