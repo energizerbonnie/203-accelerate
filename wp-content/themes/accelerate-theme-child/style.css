@@ -26,6 +26,64 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
+.our-services {
+    text-align: center;
+}
+
+.individual-service {
+    list-style: none;
+    text-align: justify;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.our-services h4 {
+    text-transform: uppercase;
+}
+
+.our-services h3 {
+    margin: 0;
+}
+
+.services-list {
+}
+
+.our-services h2 {
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+}
+
+.our-services p {
+    margin-top: 0;
+    padding: 0 10em;
+}
+
+.our-services .about-intro {
+    padding: 0 12em 4em;
+}
+
+.our-services h2,
+.our-services a {
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.our-services hr {
+   background-color: #bfbfbf;
+   color: #bfbfbf;
+   height: 1px;
+   border: none;
+}
+
+figure {
+    float: left;
+}
+
+figure:nth-child(even) {
+}
+
 /* End of About Page */
 
 /* Social Media Nav */
@@ -68,6 +126,7 @@ li.social-icon {
 }
 
 /* blog post on homepage */
+
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
@@ -75,6 +134,7 @@ li.social-icon {
 	margin: 2em 0 .5em;
 }
 .blog-post h3 {
+    margin: 0 auto;
 	font-size: 1.5em;
 }
 .read-more-link {
@@ -83,7 +143,30 @@ li.social-icon {
 	text-transform: uppercase;
 }
 
+/* Blog Page */
+
+input[type=submit] {
+    background: #45ac9d;
+    height: auto;
+    padding: 1em 4.10em;
+}
+
+input[type=email] {
+    margin-top: 5px;
+}
+
 /* Widget Area on Homepage */
+
+#ctf {
+    overflow-y: visible;
+}
+
+.ctf-tweets {
+    width: 350px;
+    float: right;
+}
+
+/* END of Widget Area */
 
 /*Case Studies*/
 .case-study {
@@ -99,15 +182,12 @@ li.social-icon {
 .case-study h4 span {
     color: #878787;
 }
-.case-study-sidebar p {
-    margin: 2em 0;
-}
-div.case-study-images {
-	margin-top: 3em;
+.heateorSssClear {
+    padding: .20em;
 }
 div.case-study-images img {
     width: 100%;
-	margin-bottom: 3.125em;
+	margin: 2em 0 3.125em 0;
 	border: 1px solid #dddddd;
 }
 /*END Case Studies*/
