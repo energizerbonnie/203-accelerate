@@ -37,6 +37,11 @@
     margin-bottom: 2em;
 }
 
+.our-services figure {
+    display: block;
+    width: 33%;
+}
+
 .our-services h4 {
     text-transform: uppercase;
 }
@@ -45,7 +50,7 @@
     margin: 0;
 }
 
-.services-list {
+.services-list p {
 }
 
 .our-services h2 {
