@@ -40,9 +40,11 @@ get_header(); ?>
 					$size = "full";
 				?>
 				<li class="individual-service">
-					<figure>
+					<div class="service-img">
+						<figure>
 						<?php echo wp_get_attachment_image($image, $size); ?>
-					</figure>
+						</figure>
+					</div>
 					<div class="services-list">
 						<h3><?php the_title(); ?></h3>
 						<?php the_content(); ?>
