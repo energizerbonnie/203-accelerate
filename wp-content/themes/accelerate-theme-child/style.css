@@ -37,12 +37,23 @@
     margin-bottom: 2em;
 }
 
-.service-img figure {
-
+.service-img {
+    width: 30%;
 }
 
-figure:nth-child(2) {
+.individual-service:nth-child(odd) figure {
     float: right;
+}
+
+.services-list {
+    width: 65%;
+    float: left;
+    margin-left: 4em;
+}
+
+.our-services p {
+    padding-bottom: 3.5em;
+    float: left;
 }
 
 .our-services h4 {
@@ -53,20 +64,11 @@ figure:nth-child(2) {
     margin: 0;
 }
 
-.services-list p {
-}
-
 .our-services h2 {
     padding-top: 2em;
     padding-right: 2em;
     padding-bottom: 2.5em;
 }
-
-.our-services p {
-    margin-top: 0;
-    padding: 0 10em;
-}
-
 .our-services .about-intro {
     padding: 0 12em 4em;
 }
@@ -79,10 +81,11 @@ figure:nth-child(2) {
 }
 
 .our-services hr {
-   background-color: #bfbfbf;
-   color: #bfbfbf;
-   height: 1px;
-   border: none;
+    clear: both;
+    background-color: #bfbfbf;
+    color: #bfbfbf;
+    height: 1px;
+    border: none;
 }
 
 figure {

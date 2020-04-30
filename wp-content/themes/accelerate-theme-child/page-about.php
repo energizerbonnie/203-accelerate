@@ -40,20 +40,18 @@ get_header(); ?>
 					$size = "full";
 				?>
 				<li class="individual-service">
-					<div class="service-img">
-						<figure>
+					<figure>
 						<?php echo wp_get_attachment_image($image, $size); ?>
-						</figure>
-					</div>
+					</figure>
 					<div class="services-list">
 						<h3><?php the_title(); ?></h3>
 						<?php the_content(); ?>
 					</div>
 				</li>
-			</ul>
 			<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
-			<hr >
+			</ul>
+			<hr>
 			<h2><?php echo get_field("contact_text"); ?></h2>
 			<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 		</div>
